@@ -1,0 +1,104 @@
+@charset "UTF-8";
+/*drawerMenu.css */
+
+/* ハンバーガーメニュー */
+#navToggle {
+    z-index:20;
+	  display: none;
+	  position:absolute;
+	  right:13px;
+	  top:13px;
+	  width:30px;
+	  height:25px;
+	  cursor:pointer;
+}
+#navToggle div {
+    position:relative;
+}
+#navToggle span {
+	  display:block;
+	  position:absolute;
+	  width:100%;
+	  border-bottom:solid 3px #999;
+	  -webkit-transition: .35s ease-in-out;
+	  -moz-transition: .35s ease-in-out;
+	  transition: .35s ease-in-out;
+}
+#navToggle span:nth-child(1) {top:0}
+#navToggle span:nth-child(2) {top:11px}
+#navToggle span:nth-child(3) {top:22px}
+
+
+/*Media-queries_____________________________________*/
+/*@media screen and (max-height: 640px) {
+}*/
+
+header {
+    background:rgba(240,240,240);
+}
+
+.site-title {
+    z-index: 20;
+}
+
+@media screen and (max-width: 640px) {
+    header nav {
+	      position:absolute;
+	      right:0;
+        top:-100%;
+	      background:rgba(240,240,240,0.7);
+        width:100%;
+        height:100%;
+	      -webkit-transition:.5s ease-in-out;
+	      -moz-transition:.5s ease-in-out;
+	      -o-transition:.5s ease-in-out;
+	      transition:.5s ease-in-out;
+	      text-align:center;
+        z-index:10;
+    }
+    header ul li {
+        display:block;
+        margin:0;
+        border-bottom:
+        dotted 1px #fff;
+        line-height:3}
+    header ul li a {display:block}
+    header ul li::after {content:''}
+    header ul li:last-child {border-bottom:none}
+    /* Toggle(Button) */
+    #navToggle {display: block}
+    /* Click Toggle(Button) */
+    .openNav #navToggle span:nth-child(1) {
+	      top: 11px;
+	      -webkit-transform:rotate(-45deg);
+	      -moz-transform:rotate(-45deg);
+	      transform:rotate(-45deg)}
+    .openNav #navToggle span:nth-child(2),
+    .openNav #navToggle span:nth-child(3) {
+	      top: 11px;
+	      -webkit-transform:rotate(45deg);
+	      -moz-transform:rotate(45deg);
+	      transform:rotate(45deg)}
+    /*header menu*/
+    .openNav nav {
+	      -moz-transform: translateY(300%);
+	      -webkit-transform: translateY(300%);
+	      transform: translateY(100%);
+        margin-top: 50px;
+    }
+}
+
+.recipe-name {
+    text-align: center;
+}
+
+/*.unit {
+    float: right;
+    width: 100px;
+    text-align: right;
+}*/
+
+/*.material-list {
+    width: 80%;
+    text-align: center;
+}*/

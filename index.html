@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Your page title here :)</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+       –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+       –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- CSS
+       –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+
+  <!-- Favicon
+       –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>
+   $(function() {
+       $('#navToggle').click(function(){//headerに .openNav を付加・削除
+           $('header').toggleClass('openNav');
+       });
+   });
+  </script>
+</head>
+<body>
+
+    <!-- Primary Page Layout
+         –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <header>
+        <h1>
+            <div class="site-title">
+                <a href="index.html">test</a>
+            </div>
+        </h1>
+        <div id="navToggle">
+            <div>
+                <span></span> <span></span> <span></span>
+            </div>
+        </div><!--#navToggle END-->
+        <nav>
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">MENU1</a></li>
+                <li><a href="#">MENU2</a></li>
+                <li><a href="#">MENU3</a></li>
+                <li><a href="#">MENU4</a></li>
+            </ul>
+        </nav>
+    </header>
+  <div class="container">
+      <div class="row">
+          <a href="index.html">
+              <h4 class="recipe-name">鯖の味噌煮</h4>
+          </a>
+        <h5>材料</h5>
+        <ul class="material-list">
+            <li>
+                味噌・・・1g
+            </li>
+            <li>
+                ささかまいかにんじん・・・1g
+            </li>
+        </ul>
+    </div>
+  </div>
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>
