@@ -2,65 +2,58 @@
 <html lang="en">
 <head>
 
-  <!-- Basic Page Needs
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8">
-  <title>Your page title here :)</title>
-  <meta name="description" content="">
-  <meta name="author" content="">
+  <title>sample</title>
 
   <!-- Mobile Specific Metas
        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- FONT
-       –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
-
   <!-- CSS
        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/header.css">
-  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <!-- JS
+       –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script
+			src="https://code.jquery.com/jquery-3.2.1.js"
+			integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+			crossorigin="anonymous"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
   <!-- Favicon
+
        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="icon" type="image/png" href="images/favicon.png">
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-  <script>
-   $(function() {
-       $('#navToggle').click(function(){//headerに .openNav を付加・削除
-           $('header').toggleClass('openNav');
-       });
-   });
-  </script>
 </head>
 <body>
 
     <!-- Primary Page Layout
          –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <header>
-        <h1>
-            <div class="site-title">
-                <a href="index.html">test</a>
-            </div>
-        </h1>
-        <div id="navToggle">
-            <div>
-                <span></span> <span></span> <span></span>
-            </div>
-        </div><!--#navToggle END-->
-        <nav>
-            <ul>
-                <li><a href="#">HOME</a></li>
-                <li><a href="#">MENU1</a></li>
-                <li><a href="#">MENU2</a></li>
-                <li><a href="#">MENU3</a></li>
-                <li><a href="#">MENU4</a></li>
+    <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="#">Navbar</a>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#">Disabled</a>
+                </li>
             </ul>
-        </nav>
-    </header>
-  <div class="container">
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="text" placeholder="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+    <div class="container">
       <div class="row">
           <a href="index.html">
               <h4 class="recipe-name">鯖の味噌煮</h4>
