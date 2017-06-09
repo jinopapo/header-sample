@@ -1,3 +1,7 @@
+body{
+    background-color: #E6E6E6
+}
+
 .header-image {
   width: 100vw;
   height: auto;
@@ -5,7 +9,7 @@
   color: #E6E6E6;
   background-size: cover;
   background-position: center;
-  background-image: url("http://livedoor.4.blogimg.jp/karapaia_zaeega/imgs/9/5/95267aa7.jpg");
+  background-image: url("../image/header.jpg");
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
