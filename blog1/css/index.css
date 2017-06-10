@@ -5,7 +5,7 @@ body{
 .header-image {
   width: 100vw;
   height: auto;
-  min-height: 100vh;
+  min-height: 60vh;
   color: #E6E6E6;
   background-size: cover;
   background-position: center;
@@ -26,16 +26,15 @@ body{
 
 .main-container{
     width: 80vw;
-    height: 30vh;
     margin: 0 10vw;
 }
 
-.sns-links{
+.links{
     position: relative;
     height: 100%;
 }
 
-.sns-link{
+.link{
     position: absolute;
     top: 0;
     bottom: 0;
@@ -44,6 +43,39 @@ body{
     margin: auto;
 }
 
+.content-container{
+    margin:10vh 0;
+}
+
+.title{
+    border-bottom: thin solid;
+}
+
+.thumbnail{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    margin-top: 10vh;
+}
+
+.thumbnail img {
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+}
+
+.story-title{
+    display: block;
+}
+
+.detail-link{
+    float: right;
+    color: #222;
+}
+
+.detail-link:hover{
+    color: #aaa;
+}
 @media screen and (max-width: 320px) and (max-width: 480px) {
   .box {
     width: 320px;
